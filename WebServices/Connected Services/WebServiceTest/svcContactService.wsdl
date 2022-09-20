@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.mipatrimonio.com/SicopWebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="svcContactService" targetNamespace="http://www.mipatrimonio.com/SicopWebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.mipatrimonio.com/SicopWebServices/Imports">
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd0" namespace="http://www.mipatrimonio.com/SicopWebServices" />
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" />
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SICOP.Zoho" />
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Engine.BO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IContactService_AddContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContact" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContact_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q1:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContact_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q2:APISecurityException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContactClienteExistente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactClienteExistente" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContactClienteExistente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactClienteExistenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContactClienteExistente_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q3:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_AddContactClienteExistente_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q4:APISecurityException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_UpdateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContact" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_UpdateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_UpdateContact_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q5:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_UpdateContact_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q6:APISecurityException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerCreateContactToSicop_InputMessage">
+    <wsdl:part name="parameters" element="tns:TriggerCreateContactToSicop" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerCreateContactToSicop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TriggerCreateContactToSicopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerCreateContactToSicop_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q7:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerCreateContactToSicop_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q8:APISecurityException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerUpdateContactToSicop_InputMessage">
+    <wsdl:part name="parameters" element="tns:TriggerUpdateContactToSicop" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerUpdateContactToSicop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TriggerUpdateContactToSicopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerUpdateContactToSicop_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q9:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_TriggerUpdateContactToSicop_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q10:APISecurityException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_GetContactByIdZoho_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactByIdZoho" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_GetContactByIdZoho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactByIdZohoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_GetContactByIdZoho_APIApplicationExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q11:APIApplicationException" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_GetContactByIdZoho_APISecurityExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/SICOP.Business.Contracts" name="detail" element="q12:APISecurityException" />
+  </wsdl:message>
+  <wsdl:portType name="IContactService">
+    <wsdl:operation name="AddContact">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContact" message="tns:IContactService_AddContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactResponse" message="tns:IContactService_AddContact_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_AddContact_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_AddContact_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContactClienteExistente">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactClienteExistente" message="tns:IContactService_AddContactClienteExistente_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactClienteExistenteResponse" message="tns:IContactService_AddContactClienteExistente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactClienteExistenteAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_AddContactClienteExistente_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/AddContactClienteExistenteAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_AddContactClienteExistente_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/UpdateContact" message="tns:IContactService_UpdateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/UpdateContactResponse" message="tns:IContactService_UpdateContact_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/UpdateContactAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_UpdateContact_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/UpdateContactAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_UpdateContact_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TriggerCreateContactToSicop">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerCreateContactToSicop" message="tns:IContactService_TriggerCreateContactToSicop_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerCreateContactToSicopResponse" message="tns:IContactService_TriggerCreateContactToSicop_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerCreateContactToSicopAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_TriggerCreateContactToSicop_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerCreateContactToSicopAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_TriggerCreateContactToSicop_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TriggerUpdateContactToSicop">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerUpdateContactToSicop" message="tns:IContactService_TriggerUpdateContactToSicop_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerUpdateContactToSicopResponse" message="tns:IContactService_TriggerUpdateContactToSicop_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerUpdateContactToSicopAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_TriggerUpdateContactToSicop_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/TriggerUpdateContactToSicopAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_TriggerUpdateContactToSicop_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactByIdZoho">
+      <wsdl:input wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/GetContactByIdZoho" message="tns:IContactService_GetContactByIdZoho_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/GetContactByIdZohoResponse" message="tns:IContactService_GetContactByIdZoho_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/GetContactByIdZohoAPIApplicationExceptionFault" name="APIApplicationExceptionFault" message="tns:IContactService_GetContactByIdZoho_APIApplicationExceptionFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.mipatrimonio.com/SicopWebServices/IContactService/GetContactByIdZohoAPISecurityExceptionFault" name="APISecurityExceptionFault" message="tns:IContactService_GetContactByIdZoho_APISecurityExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="svcContactService">
+    <wsdl:port name="WSHttpBinding_IContactService" binding="i0:WSHttpBinding_IContactService">
+      <soap12:address location="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

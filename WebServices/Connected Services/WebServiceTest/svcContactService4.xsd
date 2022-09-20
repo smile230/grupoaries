@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SICOP.Zoho" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SICOP.Zoho" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ContactDataModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Account_Name" nillable="true" type="tns:AccountNameModel" />
+      <xs:element minOccurs="0" name="Apellido_Materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Average_Time_Spent_Minutes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CampaignSource" nillable="true" type="tns:CampaignSourceDataModel" />
+      <xs:element minOccurs="0" name="Ciudad_de_correspondencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Codigo_de_Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Colonia_para_correspondencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cuenta_con_Metodo_de_Pago_Comprobable" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date_of_Birth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Days_Visited" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Domicilio_para_recibir_notificaciones" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Duplicidad_localizada_en" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email_Opt_Out" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Estado_Civil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado_de_correspondencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exchange_Rate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="First_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="First_Visited_Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="First_Visited_URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Full_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gerencia" nillable="true" type="tns:GerencyDataModel" />
+      <xs:element minOccurs="0" name="Home_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_de_Expediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Last_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Last_Visited_Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lead_Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailing_City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailing_Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailing_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailing_Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mailing_Zip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nacionalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number_Of_Chats" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_Street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_Zip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Otra_Colonia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Otro_domicilio_para_recibir_notificaciones" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Pais_para_correspondencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Punto_de_Venta" nillable="true" type="tns:SalesPointDataModel" />
+      <xs:element minOccurs="0" name="RFC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Recomendado_por" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Record_Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Referrer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reporting_To" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Residencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secondary_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefonos_actualizados_correctamente" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Tipo_de_Contacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Twitter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validacion_de_duplicados" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Visitor_Score" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigo_sincronizacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mensaje_sincronizacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactDataModel" nillable="true" type="tns:ContactDataModel" />
+  <xs:complexType name="AccountNameModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:DataModel" />
+      <xs:element minOccurs="0" name="EntityId" type="xs:long" />
+      <xs:element minOccurs="0" name="Layout" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LineItems" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="LookupLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleAPIName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Owner" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Participants" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PriceDetails" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Properties" nillable="true" type="tns:PropertiesModel" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TagNames" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tags" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TaxList" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccountNameModel" nillable="true" type="tns:AccountNameModel" />
+  <xs:complexType name="DataModel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="DataModel" nillable="true" type="tns:DataModel" />
+  <xs:complexType name="PropertiesModel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="PropertiesModel" nillable="true" type="tns:PropertiesModel" />
+  <xs:complexType name="CampaignSourceDataModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campaign_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="End_Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exchange_Rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Num_sent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Start_Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono_Publicitario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CampaignSourceDataModel" nillable="true" type="tns:CampaignSourceDataModel" />
+  <xs:complexType name="GerencyDataModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Budgeted_Cost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Campaign_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="End_Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exchange_Rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Expected_Revenue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Medio_Publicitario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Num_sent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parent_Campaign" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Start_Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono_Publicitario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GerencyDataModel" nillable="true" type="tns:GerencyDataModel" />
+  <xs:complexType name="SalesPointDataModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Calle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Codigo_Postal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Colonia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripci_n" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email_Opt_Out" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Exchange_Rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Fecha_de_Cierre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Last_Activity_Time" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono_MEX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono_USA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesPointDataModel" nillable="true" type="tns:SalesPointDataModel" />
+</xs:schema>

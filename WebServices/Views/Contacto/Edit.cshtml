@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "Actualizar Contacto";
+}
+
+<h2>Actualizar Contacto</h2>
+<fieldset class="container">
+    <form id="FrmContacto" method="post">
+
+        <div class="input-group mb-2">
+            <input type="text" class="form-control" id="IdZoho" placeholder="Ingrese IdZoho" />
+            <span class="input-group-btn">
+                <button class="btn btn-primary"  id="buscarContacto">Buscar</button>
+            </span>
+        </div>
+
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Apellido_Materno" placeholder="Ingrese Apellido Materno" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Average_Time_Spent_Minutes" placeholder="Ingrese Average Time Spent Minutes" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Ciudad_de_correspondencia" placeholder="Ingrese Ciudad de Correspondencia" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Codigo_de_Pais" placeholder="Ingrese Codigo de Pais" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="codigo_sincronizacion" placeholder="Ingrese codigo sincronizacion" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="colonia_para_correspondencia" placeholder="Ingrese colonia para correspondencia" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Cuenta_con_Metodo_de_Pago_Comprobable" placeholder="Ingrese Cuenta con Metodo de Pago Comprobable" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="CURP" placeholder="Ingrese CURP" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Currency" placeholder="Ingrese Currency" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Date_of_Birth" placeholder="Ingrese Date of Birth" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Days_Visited" placeholder="Ingrese Days Visited" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Department" placeholder="Ingrese Department" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Description" placeholder="Ingrese Description" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Domicilio_para_recibir_notificaciones" placeholder="Ingrese Domicilio para recibir notificaciones" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Duplicidad_localizada_en" placeholder="Ingrese Duplicidad localizada en" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Edad" placeholder="Ingrese Edad" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Email" placeholder="Ingrese Email" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Email_Opt_Out" placeholder="Ingrese Email Opt Out" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Estado_Civil" placeholder="Ingrese Estado Civil" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Exchange_Rate" placeholder="Ingrese Exchange Rate" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Fax" placeholder="Ingrese Fax" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="First_Name" placeholder="Ingrese First Name" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="First_Visited_Time" placeholder="Ingrese First Visited Time" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="First_Visited_URL" placeholder="Ingrese First Visited URL" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Full_Name" placeholder="Ingrese Full Name" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Home_Phone" placeholder="Ingrese Home Phone" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="ID_de_Expediente" placeholder="Ingrese ID de Expediente" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Last_Name" placeholder="Ingrese Last Name" />
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="Last_Visited_Time" placeholder="Ingrese Last Visited Time" />
+        </div>
+    </form>
+    <button class="button btn-primary" onclick="ActualizarContacto()">Actualizar</button>
+    <button class="button btn-danger" onclick="Cancelar()">Cancelar</button>
+</fieldset>
+

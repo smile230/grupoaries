@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0aca0e06-beeb-42bd-a775-a00b5b68cd77" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="svcContactService.xsd" MetadataType="Schema" ID="d20ce0b4-1c88-49a2-9e8a-6d0e7009c7f9" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd1" />
+    <MetadataFile FileName="svcContactService1.xsd" MetadataType="Schema" ID="51183863-2522-4d94-b49e-df82718d15d8" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd5" />
+    <MetadataFile FileName="svcContactService2.xsd" MetadataType="Schema" ID="e33ef403-5db9-49dd-b223-730bc96913a2" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd0" />
+    <MetadataFile FileName="svcContactService.wsdl" MetadataType="Wsdl" ID="5cc1bdb5-c773-4ca9-8f7f-363e9b4b452f" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?wsdl" />
+    <MetadataFile FileName="svcContactService3.xsd" MetadataType="Schema" ID="1d0ca898-d58b-463c-84f4-66c3fb76b6bf" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd3" />
+    <MetadataFile FileName="svcContactService4.xsd" MetadataType="Schema" ID="12805e18-c56e-4a7e-a6ac-43167140c45c" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd2" />
+    <MetadataFile FileName="svcContactService5.xsd" MetadataType="Schema" ID="39bd717c-72f3-43f0-9196-35b9e3207317" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?xsd=xsd4" />
+    <MetadataFile FileName="svcContactService1.wsdl" MetadataType="Wsdl" ID="0d4dd386-9fb8-4c00-bf6c-e35040c3e55f" SourceId="1" SourceUrl="https://arieswebapi-pre-produccion.azurewebsites.net/svcContactService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
